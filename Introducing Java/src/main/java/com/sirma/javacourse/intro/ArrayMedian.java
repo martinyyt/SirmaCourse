@@ -17,7 +17,6 @@ public class ArrayMedian {
         }
         int medianIndex = 0;
         long medianValue = Long.MAX_VALUE;
-        //dsfsdfsdfs
         for (int i = 0; i < diffOfSumsByMedian.length; i++) {
             if (diffOfSumsByMedian[i] < medianValue) {
                 medianValue = diffOfSumsByMedian[i];
