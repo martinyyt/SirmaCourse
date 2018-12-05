@@ -20,11 +20,13 @@ public class Run {
         //ArraySorting.quickSort(arr);
         //ArrayReverse.arrayReverse(arr);
         //ArrayProcessing.print(arr);
-        SummingLargeNumbers.sumLargeNumbers("5525","2566");
+        /*SummingLargeNumbers.sumLargeNumbers("5525","2566");
         System.out.println(RandomStrings.randomString(2000));
         for (int i = 0; i<100;i++){
             System.out.println(RandomStrings.randomString(1));
-        }
+        }*/
+
+        HangmanGame.Play();
 
     }
 }
