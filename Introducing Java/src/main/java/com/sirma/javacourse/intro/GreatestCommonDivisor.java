@@ -4,6 +4,9 @@ public class GreatestCommonDivisor {
 
     // using Euclid's algorithm for Greatest common divisor
     public static int findGCD(int numbOne, int numbTwo) {
+        if ((numbOne == 0) || (numbTwo == 0)) {
+            throw new java.lang.ArithmeticException();
+        }
         int remainder = 0;
         while (numbOne != numbTwo) {
             if (numbOne > numbTwo) {

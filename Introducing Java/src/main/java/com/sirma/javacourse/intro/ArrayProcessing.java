@@ -1,10 +1,12 @@
 package com.sirma.javacourse.intro;
 
-import java.util.Arrays;
-
 public class ArrayProcessing {
 
+    //returns the index of the smallest element; if the array is empty returns -1
     public static int getMinElementIndex(int[] array) {
+        if (array.length == 0) {
+            return -1;
+        }
         int min = array[0];
         int minIndex = 0;
         for (int i = 0; i < array.length; i++) {
@@ -16,6 +18,7 @@ public class ArrayProcessing {
         return minIndex;
     }
 
+    //returns the sum of the elements of an array
     public static long sum(int[] array) {
         long sum = 0;
         for (int number : array) {
@@ -39,7 +42,7 @@ public class ArrayProcessing {
     }
 
     // ? only return the sum or should I print the sub array and the sum???
-    public static void findMaxSumOfConsecutiveElements(int[] array) {
+    public static long findMaxSumOfConsecutiveElements(int[] array) {
         long maxSum = array[0];
         long tempSum;
         int startIndex = 0;
@@ -72,5 +75,6 @@ public class ArrayProcessing {
         }
         print(result);
         System.out.println(maxSum);
+        return maxSum;
     }
 }
